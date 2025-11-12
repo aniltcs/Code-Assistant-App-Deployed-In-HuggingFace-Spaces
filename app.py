@@ -3,7 +3,7 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 
 # ---------------------------------------------------------
-# 🚀 1. Initialize Groq LLM (singleton pattern)
+# 🚀 1. Initialize Groq LLM
 # ---------------------------------------------------------
 llm_instances = {}  # store models to avoid reinitialization
 
@@ -69,3 +69,4 @@ with gr.Blocks() as demo:
 # 5. Launch app
 # ---------------------------------------------------------
 demo.launch()
+
